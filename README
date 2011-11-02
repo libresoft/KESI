@@ -1,0 +1,12 @@
+KESI is a component of the ALERT project, FP7 project funded by the European
+Commission. KESI stands for Knowledge Extractor for Structured Information.
+
+KESI is licensed under GPL v2+
+
+In order to get the code do the following:
+- git clone git://github.com/libresoft/KESI.git KESI
+- cd KESI/
+- git submodule init
+- git submodule update
+
+More info about the project can be found at: http://www.alert-project.eu/
