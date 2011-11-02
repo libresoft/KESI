@@ -1,0 +1,9 @@
+[submodule "core"]
+	path = core
+	url = http://git.libresoft.es/kesi/
+[submodule "cvsanaly"]
+	path = cvsanaly
+	url = http://git.libresoft.es/cvsanaly
+[submodule "bicho"]
+	path = bicho
+	url = http://git.libresoft.es/bicho
