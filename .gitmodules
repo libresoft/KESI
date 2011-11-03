@@ -1,0 +1,9 @@
+[submodule "cvsanaly"]
+	path = cvsanaly
+	url = git://github.com/libresoft/CVSAnaly-ALERT-branch.git
+[submodule "handler"]
+	path = handler
+	url = git://github.com/libresoft/KESI-handler.git
+[submodule "bicho"]
+	path = bicho
+	url = git://github.com/libresoft/Bicho.git
