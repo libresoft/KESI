@@ -1,60 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing">
-<s:Header></s:Header>
-<s:Body>
-<wsnt:Notify>
-<wsnt:NotificationMessage>
-<wsnt:Topic></wsnt:Topic>
-<wsnt:ProducerReference>
-<wsa:Address>http://www.alert-project.eu/kesi</wsa:Address>
-</wsnt:ProducerReference>
-<wsnt:Message>
-<ns1:event xmlns:ns1="http://www.alert-project.eu/" xmlns:o="http://www.alert-project.eu/ontoevents-mdservice" xmlns:r="http://www.alert-project.eu/rawevents-forum" xmlns:r1="http://www.alert-project.eu/rawevents-mailinglist" xmlns:r2="http://www.alert-project.eu/rawevents-wiki" xmlns:s="http://www.alert-project.eu/strevents-kesi" xmlns:s1="http://www.alert-project.eu/strevents-keui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.alert-project.eu/alert-root.xsd">
-<ns1:head>
-<ns1:sender>KESI</ns1:sender>
-<ns1:timestamp>10000</ns1:timestamp>
-<ns1:sequencenumber>1</ns1:sequencenumber>
-</ns1:head>
-<ns1:payload>
-<ns1:meta>
-<ns1:startTime>10010</ns1:startTime>
-<ns1:endTime>10010</ns1:endTime>
-<!-- name of event -->
-<ns1:eventName>ALERT.KESI.IssueUpdate</ns1:eventName>
-<ns1:eventId>5748</ns1:eventId>
-<ns1:eventType>request</ns1:eventType>
-</ns1:meta>
-<ns1:eventData>
-<s:issue>
-<!-- issue id -->
-<s:issueId>184671</s:issueId>
-<!-- issue status (Assigned, Open, Verified, Resolved, Closed) -->
-<!--<s:issueStatus>Assigned</s:issueStatus>-->
-<!-- issue resolution (Duplicate, Fixed, Invalid, ThirdParty, WontFix, WorksForMe, Later, Remind) -->
+<s:Envelope
+  xmlns:s="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2"
+  xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <s:Header></s:Header>
+  <s:Body>
+    <wsnt:Notify>
+      <wsnt:NotificationMessage>
+        <wsnt:Topic></wsnt:Topic>
+        <wsnt:ProducerReference>
+          <wsa:Address>http://www.alert-project.eu/kesi</wsa:Address>
+        </wsnt:ProducerReference>
+        <wsnt:Message>
+          <ns1:event xmlns:ns1="http://www.alert-project.eu/"
+           xmlns:o="http://www.alert-project.eu/ontoevents-mdservice"
+           xmlns:r="http://www.alert-project.eu/rawevents-forum"
+           xmlns:r1="http://www.alert-project.eu/rawevents-mailinglist"
+           xmlns:r2="http://www.alert-project.eu/rawevents-wiki"
+           xmlns:s="http://www.alert-project.eu/strevents-kesi"
+           xmlns:s1="http://www.alert-project.eu/strevents-keui"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.alert-project.eu/alert-root.xsd">
+            <ns1:head>
+              <ns1:sender>KESI</ns1:sender>
+              <ns1:timestamp>10000</ns1:timestamp>
+              <ns1:sequencenumber>1</ns1:sequencenumber>
+            </ns1:head>
+            <ns1:payload>
+              <ns1:meta>
+                <ns1:startTime>10010</ns1:startTime>
+                <ns1:endTime>10010</ns1:endTime>
+                <!-- name of the event -->
+                <ns1:eventName>ALERT.KESI.IssueUpdate</ns1:eventName>
+                <ns1:eventId>5749</ns1:eventId>
+                <ns1:eventType>request</ns1:eventType>
+              </ns1:meta>
+              <ns1:eventData>
 
-<s:issueActivity>
-<s:activityId></s:activityId>
-<s:activityWho>lcanas@libresoft.es</s:activityWho>
-<s:activityWhen>2011-11-10 15:58:19</s:activityWhen>
-<!--<s:activityWRA>-->
-<s:activityWhat>Status</s:activityWhat>
-<s:activityRemoved>New</s:activityRemoved>
-<s:activityAdded>Assigned</s:activityAdded>
-<!--</s:activityWRA>-->
-</s:issueActivity>
+              <!-- Example #1 - Change of assignation --> 
+              <s:issue>
+                <s:issueId>332</s:issueId>
 
-<s:issueTracker>
-<s:issueTrackerId>241</s:issueTrackerId>
-<s:issueTrackerType>bugzilla</s:issueTrackerType>
-<s:issueTrackerURL>https://bugs.kde.org/</s:issueTrackerURL>
-</s:issueTracker>
+                <s:issueTracker>
+                  <s:issueTrackerType>bugzilla</s:issueTrackerType>
+                  <s:issueTrackerURL>https://bugzilla.libresoft.es/</s:issueTrackerURL>
+                </s:issueTracker>
 
-</s:issue>
-</ns1:eventData>
-</ns1:payload>
-</ns1:event>
-</wsnt:Message>
-</wsnt:NotificationMessage>
-</wsnt:Notify>
-</s:Body>
+                <s:issueActivity>
+                  <s:activityAdded>pgarcia</s:activityAdded>
+                  <s:activityRemoved>lcanas</s:activityRemoved>
+                  <s:activityWhat>issueAssignedTo</s:activityWhat>
+                  <s:activityWhen>2012-03-16 12:52:00.0</s:activityWhen>
+                  <s:activityWho>lcanas</s:activityWho>
+                </s:issueActivity>
+            
+                <s:issueAssignedTo>
+                  <s:email>pgarcia</s:email>
+                  <s:name></s:name>
+                  <s:id></s:id>
+                </s:issueAssignedTo>
+
+
+              </s:issue>
+
+              <!-- Example #2 - Change of status --> 
+              <s:issue>
+                <s:issueId>332</s:issueId>
+
+                <s:issueTracker>
+                  <s:issueTrackerType>bugzilla</s:issueTrackerType>
+                  <s:issueTrackerURL>https://bugzilla.libresoft.es/</s:issueTrackerURL>
+                </s:issueTracker>
+
+                <s:issueActivity>
+                  <s:activityAdded>RESOLVED</s:activityAdded>
+                  <s:activityRemoved>UNCONFIRMED</s:activityRemoved>
+                  <s:activityWhat>issueStatus</s:activityWhat>
+                  <s:activityWhen>2012-03-16 13:43:29.0</s:activityWhen>
+                  <s:activityWho>pgarcia</s:activityWho>
+                </s:issueActivity>
+
+                <s:issueStatus>Resolved</s:issueStatus>
+              </s:issue>
+
+              <!-- Example #3 - New comment -->
+              <s:issue>
+                <s:issueId>332</s:issueId>
+
+                <s:issueTracker>
+                  <s:issueTrackerType>bugzilla</s:issueTrackerType>
+                  <s:issueTrackerURL>https://bugzilla.libresoft.es/</s:issueTrackerURL>
+                </s:issueTracker>
+                
+                <s:issueComment>
+                  <s:commentText>A new comment</s:commentText>
+                  <s:commentPerson>
+                    <s:email>pgarcia</s:email>
+                    <s:name>Pedro García</s:name>
+                    <s:id>pgarcia</s:id>
+                  </s:commentPerson>
+                  <s:commentDate>2012-03-16T00:00:00+01:00</s:commentDate>
+                </s:issueComment>        
+              </s:issue>
+
+              <!-- Example #4 - New attachment -->
+              <s:issue>
+                <s:issueId>332</s:issueId>
+
+                <s:issueTracker>
+                  <s:issueTrackerType>bugzilla</s:issueTrackerType>
+                  <s:issueTrackerURL>https://bugzilla.libresoft.es/</s:issueTrackerURL>
+                </s:issueTracker>
+                
+                <s:issueAttachment>
+                  <s:attachmentId>1</s:attachmentId>
+                  <s:attachmentFilename>patch1.txt</s:attachmentFilename>
+                  <s:attachmentType>doc</s:attachmentType>
+                  <s:attachmentCreator>
+                    <s:email>pgarcia</s:email>
+                    <s:name>Pedro García</s:name>
+                    <s:id>pgarcia</s:id>
+                  </s:attachmentCreator>
+                </s:issueAttachment>
+              </s:issue>
+             
+              </ns1:eventData>
+            </ns1:payload>
+          </ns1:event>
+        </wsnt:Message>
+      </wsnt:NotificationMessage>
+    </wsnt:Notify>
+  </s:Body>
 </s:Envelope>
+

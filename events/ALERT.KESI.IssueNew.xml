@@ -1,124 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing">
-<s:Header></s:Header>
-<s:Body>
-<wsnt:Notify>
-<wsnt:NotificationMessage>
-<wsnt:Topic></wsnt:Topic>
-<wsnt:ProducerReference>
-<wsa:Address>http://www.alert-project.eu/kesi</wsa:Address>
-</wsnt:ProducerReference>
-<wsnt:Message>
-<ns1:event xmlns:ns1="http://www.alert-project.eu/" xmlns:o="http://www.alert-project.eu/ontoevents-mdservice" xmlns:r="http://www.alert-project.eu/rawevents-forum" xmlns:r1="http://www.alert-project.eu/rawevents-mailinglist" xmlns:r2="http://www.alert-project.eu/rawevents-wiki" xmlns:s="http://www.alert-project.eu/strevents-kesi" xmlns:s1="http://www.alert-project.eu/strevents-keui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.alert-project.eu/alert-root.xsd">
-<ns1:head>
-<ns1:sender>KESI</ns1:sender>
-<ns1:timestamp>10000</ns1:timestamp>
-<ns1:sequencenumber>1</ns1:sequencenumber>
-</ns1:head>
-<ns1:payload>
-<ns1:meta>
-<ns1:startTime>10010</ns1:startTime>
-<ns1:endTime>10010</ns1:endTime>
-<!-- name of event -->
-<ns1:eventName>ALERT.KESI.IssueNew</ns1:eventName>
-<ns1:eventId>5748</ns1:eventId>
-<ns1:eventType>request</ns1:eventType>
-</ns1:meta>
-<ns1:eventData>
-<s:issue>
-<!-- issue id -->
-<s:issueId>184671</s:issueId>
-<s:issueDependsOnId>10001</s:issueDependsOnId>
-<s:issueBlocksId>20001</s:issueBlocksId>
-<!-- id of issue author person -->
-<s:issueAuthor>
-<s:name>Sander Pientka</s:name>
-<s:id>cumulus0007@gmail.com</s:id>
-<s:email>cumulus0007@gmail.com</s:email>
-</s:issueAuthor>
-<!-- issue status (Assigned, Open, Verified, Resolved, Closed) -->
-<s:issueStatus>Resolved</s:issueStatus>
-<!-- issue resolution (Duplicate, Fixed, Invalid, ThirdParty, WontFix, WorksForMe, Later, Remind) -->
-<s:issueResolution/>
-<s:issueDescription>Notify user on hardware changes 2</s:issueDescription>
-<s:issueKeyword/>
-<s:issueProduct>
-<!-- id of issue project -->
-<s:productId>solid</s:productId>
-<!-- id of project component -->
-<s:productComponentId>general</s:productComponentId>
-<!-- project version -->
-<s:productVersion>unspecified</s:productVersion>
-</s:issueProduct>
-<s:issueComputerSystem>
-<!-- id of computer system -->
-<s:computerSystemId></s:computerSystemId>
-<!-- computer system platform -->
-<s:computerSystemPlatform>Ubuntu Packages</s:computerSystemPlatform>
-<!-- computer system OS -->
-<s:computerSystemOS>Linux</s:computerSystemOS>
-</s:issueComputerSystem>
-<!-- issue priority (1 - 5) -->
-<s:issuePriority>4</s:issuePriority>
-<!-- issue severity (Blocker, Critical, Major, Minor, Trivial, Feature) -->
-<s:issueSeverity>Blocker</s:issueSeverity>
-<!-- id of issue assigned person -->
-<s:issueAssignedTo>
-<s:name>Alex Fiestas</s:name>
-<s:id>afiestas@kde.org</s:id>
-<s:email>afiestas@kde.org</s:email>
-</s:issueAssignedTo>
-<!-- ids of issue CC persons -->
-<s:issueCCPerson>
-<s:name>Angel Blue</s:name>
-<s:id>angel_blue_co2004@yahoo.com</s:id>
-<s:email>angel_blue_co2004@yahoo.com</s:email>
-</s:issueCCPerson>
-<!-- issue URL from bugzilla -->
-<s:issueUrl>https://bugs.kde.org/show_bug.cgi?id=184671</s:issueUrl>
-<!-- ids of related issues -->
-<!-- date time in format yyyy-MM-dd HH:mm -->
-<s:issueDateOpened>2009-02-17 16:31</s:issueDateOpened>
-<s:issueMilestone>
-<!-- id of milestone -->
-<s:milestoneId></s:milestoneId>
-<s:milestoneTarget></s:milestoneTarget>
-</s:issueMilestone>
-<!-- issue comments -->
-<s:issueComment>
-<s:commentId></s:commentId>
-<s:commentNumber>0</s:commentNumber>
-<s:commentText>Version: (using KDE 4.2.0) OS: Linux Installed from: Ubuntu Packages It would be awesome if KDE notifies te user of newly installed hardware, missing drivers, programs to use the connected device, etc.</s:commentText>
-<s:commentPerson>
-<s:name>Sander Pientka</s:name>
-<s:id>cumulus0007@gmail.com</s:id>
-<s:email>cumulus0007@gmail.com</s:email>
-</s:commentPerson>
-<s:commentDate>2009-02-17 16:31:37</s:commentDate>
-</s:issueComment>
-<!-- issue attachments -->
-<s:issueAttachment>
-<s:attachmentId>3532</s:attachmentId>
-<s:attachmentFilename>name</s:attachmentFilename>
-<s:attachmentType>doc</s:attachmentType>
-<s:attachmentCreator>
-<s:name>Angel Blue</s:name>
-<s:id>angel_blue_co2004@yahoo.com</s:id>
-<s:email>angel_blue_co2004@yahoo.com</s:email>
-</s:attachmentCreator>
-</s:issueAttachment>
-<!-- issue issue tracker -->
-<s:issueTracker>
-<s:issueTrackerId>241</s:issueTrackerId>
-<s:issueTrackerType>bugzilla</s:issueTrackerType>
-<s:issueTrackerURL>https://bugs.kde.org/</s:issueTrackerURL>
-</s:issueTracker>
-</s:issue>
-</ns1:eventData>
-</ns1:payload>
-</ns1:event>
-</wsnt:Message>
-</wsnt:NotificationMessage>
-</wsnt:Notify>
-</s:Body>
+<s:Envelope
+  xmlns:s="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2"
+  xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <s:Header></s:Header>
+  <s:Body>
+    <wsnt:Notify>
+      <wsnt:NotificationMessage>
+        <wsnt:Topic></wsnt:Topic>
+        <wsnt:ProducerReference>
+          <wsa:Address>http://www.alert-project.eu/kesi</wsa:Address>
+        </wsnt:ProducerReference>
+        <wsnt:Message>
+          <ns1:event xmlns:ns1="http://www.alert-project.eu/"
+           xmlns:o="http://www.alert-project.eu/ontoevents-mdservice"
+           xmlns:r="http://www.alert-project.eu/rawevents-forum"
+           xmlns:r1="http://www.alert-project.eu/rawevents-mailinglist"
+           xmlns:r2="http://www.alert-project.eu/rawevents-wiki"
+           xmlns:s="http://www.alert-project.eu/strevents-kesi"
+           xmlns:s1="http://www.alert-project.eu/strevents-keui"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.alert-project.eu/alert-root.xsd">
+            <ns1:head>
+              <ns1:sender>KESI</ns1:sender>
+              <ns1:timestamp>10000</ns1:timestamp>
+              <ns1:sequencenumber>1</ns1:sequencenumber>
+            </ns1:head>
+            <ns1:payload>
+              <ns1:meta>
+                <ns1:startTime>10010</ns1:startTime>
+                <ns1:endTime>10010</ns1:endTime>
+                <!-- name of the event -->
+                <ns1:eventName>ALERT.KESI.IssueNew</ns1:eventName>
+                <ns1:eventId>5748</ns1:eventId>
+                <ns1:eventType>request</ns1:eventType>
+              </ns1:meta>
+              <ns1:eventData>
+
+                <s:issue>
+                  <!-- issue id -->
+                  <s:issueId>332</s:issueId>
+
+                  <!-- ids of related issues -->
+                  <s:issueDependsOnId>10001</s:issueDependsOnId>
+                  <s:issueBlocksId>20001</s:issueBlocksId>
+
+                  <!-- tracker -->
+                  <s:issueTracker>
+                  <s:issueTrackerType>bugzilla</s:issueTrackerType>
+                    <s:issueTrackerURL>https://bugzilla.libresoft.es/</s:issueTrackerURL>
+                  </s:issueTracker>
+                  
+                  <!-- id of issue author person -->
+                  <s:issueAuthor>
+                    <s:email>lcanas</s:email>
+                    <s:name>Luis Cañas Díaz</s:name>
+                    <s:id>lcanas</s:id>
+                  </s:issueAuthor>
+
+                  <!-- issue status (Assigned, Open, Verified, Resolved, Closed) -->
+                  <s:issueStatus>Open</s:issueStatus>
+
+                  <!-- issue resolution (Duplicate, Fixed, Invalid, ThirdParty, WontFix, WorksForMe, Later, Remind) -->
+                  <s:issueResolution/>
+
+                  <s:issueDescription>Second fake bug</s:issueDescription>
+
+                  <!-- date time in format yyyy-MM-dd HH:mm -->
+                  <s:issueDateOpened>2012-03-16T00:00:00+01:00</s:issueDateOpened>            
+
+                  <s:issueAssignedTo>
+                    <s:email>lcanas</s:email>
+                    <s:name>Luis Cañas</s:name>
+                    <s:id>lcanas</s:id>
+                  </s:issueAssignedTo>
+
+                  <s:issueCCPerson>
+                    <s:email>sduenas</s:email>
+                    <s:name>Santiago Dueñas</s:name>
+                    <s:id>sduenas</s:id>
+                  </s:issueCCPerson>
+
+                  <!-- issue priority (1 - 5) -->
+                  <s:issuePriority>3</s:issuePriority>
+
+                  <!-- issue severity (Blocker, Critical, Major, Minor, Trivial, Feature) -->
+                  <s:issueSeverity>Normal</s:issueSeverity>
+
+                  <s:issueProduct>
+                    <s:productComponentId>fake-component</s:productComponentId>
+                    <s:productId>Kesi-tester</s:productId>
+                    <s:productVersion>unspecified</s:productVersion>
+                  </s:issueProduct>
+
+                  <s:issueComputerSystem>
+                    <!-- id of computer system -->
+                    <s:computerSystemId></s:computerSystemId>
+                    <!-- computer system platform -->
+                    <s:computerSystemPlatform>Ubuntu Packages</s:computerSystemPlatform>
+                    <!-- computer system OS -->
+                    <s:computerSystemOS>Linux</s:computerSystemOS>
+                  </s:issueComputerSystem>
+
+                  <!-- keywords -->
+                  <s:issueKeyword/>
+
+                  <s:issueMilestone>
+                    <!-- id of milestone -->
+                    <s:milestoneId></s:milestoneId>
+                    <s:milestoneTarget></s:milestoneTarget>
+                  </s:issueMilestone>
+                </s:issue>
+
+              </ns1:eventData>
+            </ns1:payload>
+          </ns1:event>
+        </wsnt:Message>
+      </wsnt:NotificationMessage>
+    </wsnt:Notify>
+  </s:Body>
 </s:Envelope>

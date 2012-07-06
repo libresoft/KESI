@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope
+  xmlns:s="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2"
+  xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <s:Header></s:Header>
+  <s:Body>
+    <wsnt:Notify>
+      <wsnt:NotificationMessage>
+        <wsnt:Topic></wsnt:Topic>
+        <wsnt:ProducerReference>
+          <wsa:Address>http://www.alert-project.eu/kesi</wsa:Address>
+        </wsnt:ProducerReference>
+        <wsnt:Message>
+          <ns1:event xmlns:ns1="http://www.alert-project.eu/"
+           xmlns:o="http://www.alert-project.eu/ontoevents-mdservice"
+           xmlns:r="http://www.alert-project.eu/rawevents-forum"
+           xmlns:r1="http://www.alert-project.eu/rawevents-mailinglist"
+           xmlns:r2="http://www.alert-project.eu/rawevents-wiki"
+           xmlns:s="http://www.alert-project.eu/strevents-kesi"
+           xmlns:s1="http://www.alert-project.eu/strevents-keui"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.alert-project.eu/alert-root.xsd">
+            <ns1:head>
+              <ns1:sender>KESI</ns1:sender>
+              <ns1:timestamp>10000</ns1:timestamp>
+              <ns1:sequencenumber>1</ns1:sequencenumber>
+            </ns1:head>
+            <ns1:payload>
+              <ns1:meta>
+                <ns1:startTime>10010</ns1:startTime>
+                <ns1:endTime>10010</ns1:endTime>
+                <!-- name of the event -->
+                <ns1:eventName>ALERT.KESI.CommitNew</ns1:eventName>
+                <ns1:eventId>1316</ns1:eventId>
+                <ns1:eventType>request</ns1:eventType>
+              </ns1:meta>
+              <ns1:eventData>
+
+                <s:commit>
+                  <s:commitRevisionTag>16</s:commitRevisionTag>
+                  <s:commitDate>2011-08-08T00:00:00+02:00</s:commitDate>
+
+                  <s:commitMessageLog>Check metrics</s:commitMessageLog>
+
+                  <s:commitCommitter>
+                    <s:name>sduenas</s:name>
+                  </s:commitCommitter>
+                  <s:commitAuthor>
+                    <s:name>sduenas</s:name>
+                  </s:commitAuthor>                 
+     
+                  <s:commitFile>
+                    <s:fileBranch>trunk</s:fileBranch>
+                    <s:fileName>Changelog</s:fileName>
+                    <s:fileAction>Delete</s:fileAction>
+                  </s:commitFile>
+
+                  <s:commitFile>
+                    <s:fileBranch>trunk</s:fileBranch>
+                     <s:fileName>src/MyError.java</s:fileName>
+                     <s:fileModules>
+                       <s:moduleEndLine>155</s:moduleEndLine>
+                       <s:moduleMethods>
+                         <s:methodEndLine>150</s:methodEndLine>
+                         <s:methodName>geNewtPrimaryError()</s:methodName>
+                         <s:methodStartLine>132</s:methodStartLine>
+                       </s:moduleMethods>
+                       <s:moduleMethods>
+                         <s:methodEndLine>76</s:methodEndLine>
+                         <s:methodName>SslPError(int,SslCertificate)</s:methodName>
+                         <s:methodStartLine>66</s:methodStartLine>
+                       </s:moduleMethods>
+                       <s:moduleMethods>
+                         <s:methodEndLine>106</s:methodEndLine>
+                         <s:methodName>addError(int)</s:methodName>
+                         <s:methodStartLine>93</s:methodStartLine>
+                       </s:moduleMethods>
+                    </s:fileModules>
+                    <s:fileAction>Modify</s:fileAction>
+                  </s:commitFile>
+                </s:commit>
+
+              </ns1:eventData>
+            </ns1:payload>
+          </ns1:event>
+        </wsnt:Message>
+      </wsnt:NotificationMessage>
+    </wsnt:Notify>
+  </s:Body>
+</s:Envelope>
