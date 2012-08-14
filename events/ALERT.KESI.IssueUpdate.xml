@@ -60,6 +60,7 @@
                   <s:id></s:id>
                 </s:issueAssignedTo>
 
+                <s:issueUrl>https://bugzilla.libresoft.es/show_bug.cgi?id=332</s:issueUrl>
 
               </s:issue>
 
@@ -81,6 +82,9 @@
                 </s:issueActivity>
 
                 <s:issueStatus>Resolved</s:issueStatus>
+
+                <s:issueUrl>https://bugzilla.libresoft.es/show_bug.cgi?id=332</s:issueUrl>
+
               </s:issue>
 
               <!-- Example #3 - New comment -->
@@ -100,7 +104,10 @@
                     <s:id>pgarcia</s:id>
                   </s:commentPerson>
                   <s:commentDate>2012-03-16T00:00:00+01:00</s:commentDate>
-                </s:issueComment>        
+                </s:issueComment>
+
+                <s:issueUrl>https://bugzilla.libresoft.es/show_bug.cgi?id=332</s:issueUrl>
+
               </s:issue>
 
               <!-- Example #4 - New attachment -->
@@ -122,6 +129,9 @@
                     <s:id>pgarcia</s:id>
                   </s:attachmentCreator>
                 </s:issueAttachment>
+
+                <s:issueUrl>https://bugzilla.libresoft.es/show_bug.cgi?id=332</s:issueUrl>
+
               </s:issue>
              
               </ns1:eventData>

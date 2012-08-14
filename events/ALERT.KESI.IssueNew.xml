@@ -41,6 +41,9 @@
                   <!-- issue id -->
                   <s:issueId>332</s:issueId>
 
+                  <!-- issue URL -->
+                  <s:issueUrl>https://bugzilla.libresoft.es/show_bug.cgi?id=332</s:issueUrl>
+
                   <!-- ids of related issues -->
                   <s:issueDependsOnId>10001</s:issueDependsOnId>
                   <s:issueBlocksId>20001</s:issueBlocksId>
@@ -64,7 +67,8 @@
                   <!-- issue resolution (Duplicate, Fixed, Invalid, ThirdParty, WontFix, WorksForMe, Later, Remind) -->
                   <s:issueResolution/>
 
-                  <s:issueDescription>Second fake bug</s:issueDescription>
+                  <s:issueSummary>Second fake bug</s:issueSummary>
+                  <s:issueDescription>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</s:issueDescription>
 
                   <!-- date time in format yyyy-MM-dd HH:mm -->
                   <s:issueDateOpened>2012-03-16T00:00:00+01:00</s:issueDateOpened>            
